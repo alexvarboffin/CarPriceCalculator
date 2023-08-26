@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">калькулятор цены автомобиля</string>
+
+<!--    <string name="base_price_hint">Base Price</string>-->
+<!--    <string name="options_price_hint">Options Price</string>-->
+<!--    <string name="tax_rate_hint">Tax Rate (%)</string>-->
+<!--    <string name="calculate_button_text">Calculate</string>-->
+<!--    <string name="result_text">Result: </string>-->
+
+
+    <string name="base_price_hint">Базовая цена</string>
+    <string name="options_price_hint">Стоимость опций</string>
+    <string name="tax_rate_hint">Ставка налога (%)</string>
+    <string name="calculate_button_text">Рассчитать</string>
+    <string name="result_text">Результат: </string>
+
+</resources>

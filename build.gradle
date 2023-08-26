@@ -1,0 +1,49 @@
+ext {
+    minSdkVersion = 21
+    targetSdkVersion = 34
+
+    lifecycle_version = "2.6.1"
+    kotlin_version = "1.8.21"//1.8.10
+    roomVersion = "2.5.1"
+
+    compatVersion = "1.6.1"
+    materialVersion = "1.9.0"
+
+    crashlyticsVersion = "18.4.0"
+    analyticsVersion = "21.3.0"
+    enableLoader = false
+
+    okHttpVersion = "3.12.12" //last 19 support version
+    //okHttpVersion = "3.14.9"
+
+}
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.4.2'
+    }
+}
+
+allprojects {
+    repositories {
+        mavenLocal()
+        google()
+        mavenCentral()
+        //noinspection JcenterRepositoryObsolete
+        jcenter()
+        maven {
+            url "https://jitpack.io"
+            metadataSources {
+                mavenPom()
+                artifact()
+            }
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
